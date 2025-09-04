@@ -22,3 +22,36 @@ WHERE
 | date      | type   | description                                                                                                                                                                              | city     |
 |-----------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | 20180115  | murder	| Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr". The second witness, named Annabel, lives somewhere on "Franklin Ave".| SQL City |
+
+## 2. Extract information about the witnesses
+```sql
+-- Query to gather data about the first witness 
+SELECT
+    *
+FROM
+    person
+WHERE
+    address_street_name = 'Northwestern Dr'
+ORDER BY
+    address_number DESC
+LIMIT
+    1;
+```
+**Result:**
+|id	|name|	license_id	|address_number	|address_street_name	|ssn|
+|-----|----|----|----|---|
+|14887|Morty Schapiro|118009	|4919	|Northwestern Dr	|111564949
+
+```sql
+-- Query to gather data about the second witness
+SELECT
+    *
+FROM
+    person
+WHERE
+    name LIKE 'Annabel%'
+    AND address_street_name = 'Franklin Ave';
+```
+**Result:**
+
+
