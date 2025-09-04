@@ -53,5 +53,7 @@ WHERE
     AND address_street_name = 'Franklin Ave';
 ```
 **Result:**
-
+|id   |name	         |license_id|address_number|address_street_name|ssn      |
+|-----|--------------|----------|--------------|-------------------|---------|
+|16371|Annabel Miller|490173    |103	        |Franklin Ave       |318771143|
 
