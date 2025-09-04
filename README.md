@@ -4,6 +4,7 @@ A crime has taken place and the detective needs your help. The detective gave yo
 
 ## 1. Search for Murder in SQL City on January 15, 2018
 ```sql
+-- First Clue: The crime was a murder and occured on Jan. 15, 2018 in SQL City.
 SELECT
     *
 FROM
